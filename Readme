@@ -1,0 +1,42 @@
+User Profile Management System
+Overview
+This module focuses on profile management, allowing users to edit their profile, including personal details and profile pictures. It also integrates with authentication APIs for secure access.
+
+File Structure
+/editprofile – Frontend UI for editing user profiles.
+/api/editprofile – API endpoint for updating user profile details.
+/models – Database models for user profiles and related entities.
+/lib – Utility functions for handling authentication, data validation, and file storage.
+Features
+Profile Management
+Users can update their name, email, and other profile details.
+Supports profile picture upload and update.
+Secure authentication and authorization for profile modifications.
+API Endpoints
+/api/editprofile – Updates user profile data in the database.
+/api/profile – Fetches user profile details.
+Database Models
+The User model (in /models) includes:
+
+id – Unique user identifier.
+name – Full name.
+email – Registered email (unique).
+profile_picture – Path/URL for profile images.
+created_at – Timestamp for account creation.
+updated_at – Timestamp for last profile update.
+Technologies Used
+Frontend: Next.js, TypeScript, Tailwind CSS
+Backend: Next.js API Routes
+Database: PostgreSQL / MySQL (ORM-based models)
+Authentication: JWT-based authentication
+File Handling: Local storage / Cloud storage for profile images
+Usage
+Login to the system.
+Navigate to the Edit Profile section.
+Modify personal details and upload a new profile picture.
+Submit changes – the API updates the database.
+Changes reflect immediately in the profile dashboard.
+Setup
+Configure database connection in /lib/db.ts.
+Ensure API routes are properly authenticated.
+Set up environment variables for authentication and storage.
